@@ -1,0 +1,47 @@
+Alur Pembuatan Sistem Manajemen Informasi Pintu Otomatis Berbasis Web (PHP + MySQL)
+1. Setup Template + Setup Database
+2. Login dan Logout (Tanpa Enkripsi)
+3. Setup Halaman + Datables
+4. Insert Data (Data Akses, Akses Masuk, Akses Keluar)
+5. Menampilkan Data Ke Uraian (Table)
+6. Update dan Delete
+
+DB:
+
+Tabel User : iduser, namauser, password, role
+
+Tabel Hak Akses : idhakakses, iduser, idpintu, hakakses
+
+Tabel Pintu : idpintu, namapintu, statuspintu, lokasi
+
+Tabel Log : idlog, iduser, idpintu, waktuakses
+
+
+iduser		: Sebuah identifikasi unik untuk setiap pengguna.
+namauser	: Nama pengguna atau identitas pengguna.
+password	: Untuk metode otentikasi berbasis kata sandi.
+idhakakses	: Kunci unik untuk setiap hak akses.
+idpintu		: Kunci asing yang terhubung ke tabel Pintu.
+hakakses	: Level hak akses atau izin yang dimiliki pengguna terhadap pintu tertentu.
+namapintu	: Nama atau deskripsi pintu untuk identifikasi.
+statuspintu	: Status pintu (terbuka, tertutup, terkunci).
+lokasi		: Informasi tentang lokasi fisik pintu.
+waktuakses	: Waktu ketika pintu dibuka atau ditutup.
+
+
+SITEMAP : 
+
+- Home
+- Services
+  - Door Access Control
+  - Biometric Authentication
+  - Integration with External Systems
+  - Security Testing
+  - User Training
+- Products
+  - Smart Door Locks
+  - Facial Recognition Devices
+  - Access Control Panels
+  - Security Cameras
+- About Us
+- Contact

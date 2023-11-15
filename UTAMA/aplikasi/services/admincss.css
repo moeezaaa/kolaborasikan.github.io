@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.heading{
+    color: #00b4fc;
+    padding: 8px 12px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.heading:hover{
+    color: #fff;
+}
+
+.btn{
+    background: #0163a0;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5 ease;
+}
+
+.btn:hover{
+    background: #fff;
+    color: #171427;
+    border: 2px solid #171427;
+}
+
+.side-menu{
+    position: fixed;
+    background: #171427;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu .brand-name{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-menu ul{
+    margin-top: 30px;
+}
+
+.side-menu li{
+    font-size: 24px;
+    padding: 10px 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.side-menu li:hover{
+    opacity: 10;
+    background: #00b4fc;
+}
+
+.container{
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+.container .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.container .header .nav{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.container .header .nav .search{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.container .header .nav .search input[type=search]{
+    background: #f1f1f1;
+    padding: 10px;
+    width: 50%;
+    border: none;
+}
+
+.container .header .nav .search button{
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+/* .container .header .nav .search button i{
+    width: 30px;
+    height: 30px;
+} */
+
+.container .header .nav .user{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header .nav .user .img-case i{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.container .content{
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+}
+
+.container .content .cards{
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .content .cards .card{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    background: #171427;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.container .content .cards .card .box h1{
+    color: #00b4fc;
+}
+
+.container .content .cards .card .box h3{
+    margin-top: 8px;
+    color: rgb(188,187,187);
+}
+
+.container .content .content-2{
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.container .content .content-2 .recent-payments{
+    min-height: 50vh;
+    flex: 5;
+    background: #171427;
+    margin: 0 25px 25px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content .content-2 .new-customers{
+    min-height: 50vh;
+    flex: 5;
+    background: #171427;
+    margin: 0 25px 25px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content .content-2 .h2{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+
+table{
+    padding: 10px;
+}
+
+.white{
+    color: #00b4fc;
+    font-size: 1.1rem;
+}
+
+th,tr{
+    text-align: left;
+    padding: ;
+    color: rgb(188,187,187);
+}
